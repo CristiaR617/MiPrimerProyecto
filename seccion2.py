@@ -64,3 +64,6 @@ import math
 
 
 # cuentaAtras(5)
+
+
+#la ratilla del zeus es para hacer un sacrificion 
