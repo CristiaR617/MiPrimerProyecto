@@ -35,6 +35,7 @@ git rm -rf .git -> borra un git init mal hecho
 git revert id -> revirte los cambios hechos del commit al anterior
 git revert --no-commit HEAD(~1) -> deshace los cambios de los commit y los develve a stage
 
+
 crear llave publica y privada en la carpeta de User/SEBASTIAN
 	ssh-keygen -t rsa -b 4096 -C "email"
 revisar que las llaves estan encendidas
@@ -47,6 +48,7 @@ git remote -v -> ver existencia de repositorios remotos
 git push -u origin master -> enviar la rama master al origin
 git branch -m main -> hacer el cambio de master a main
 git pull origin master -> mandar el proyecto al repositorio y las fusiona
+git pull origin main --allow-unrelated-histories
 
 para enviar del local al remoto
 git pull -> traer la ultima version del servidor
