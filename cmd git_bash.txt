@@ -31,6 +31,9 @@ vin <name_txt> -> editar txt
 git branch -d <rama> -> eliminar rama de git
 git branch -a -> ver las ramas remotas
 git push origin -d <rama> -> eliminar rama de github desde git
+git rm -rf .git -> borra un git init mal hecho
+git revert id -> revirte los cambios hechos del commit al anterior
+git revert --no-commit HEAD(~1) -> deshace los cambios de los commit y los develve a stage
 
 crear llave publica y privada en la carpeta de User/SEBASTIAN
 	ssh-keygen -t rsa -b 4096 -C "email"
