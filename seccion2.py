@@ -46,24 +46,11 @@ import math
 #     print(imprimeMultiplos(i))
 #     i = i+1
 
-# def multiplicar(n):
-#     if n == 0:
-
-#     elif n > 0:
-#         return multiplicar(n-1)
-
-
-# print(multiplicar(5))
-
-# def cuentaAtras(x):
-#     if x == 0:
-#         print("!!despegando")
-#     else:
-#         print(x)
-#         cuentaAtras(x-1)
+def multiplicar(n):
+    if n < 0:
+        print("Deve agregar un numero positivo")
+    elif n > 0:
+        resultado = multiplicar(n-1)
 
 
-# cuentaAtras(5)
-
-
-#la ratilla del zeus es para hacer un sacrificion 
+print(multiplicar(5))

@@ -1,0 +1,65 @@
+pwd -> mostrar ruta
+ls -> listar carpeta
+ls -al -> listar carpetas y archivos ocultos
+touch -> crear arcivo vacio
+cat -> mostrar informacion de un archivo
+history -> muestra el historial de comandos
+!# -> muestra el cmd ejecutado en el #
+rm -> borra un archivo
+
+Crear repositorio
+git init
+git status -> revisa el estado de los archivos
+git add <file> -> añade el archivo a un staging / git add . -> añade todos los archivos modificados
+git rm --cached <file>-> saca el archivo del staging 
+git commit -m "" -> hace el primer save del archivo
+git log -> mustra el historial del commit
+git show -> ver el cambio hecho
+esc + shift + z + z -> para salir de la ventana, en caso de no dar mensaje del commit
+git diff <id_commit_origin> <id_commit_new> -> para ver el cambio hecho entre dos commit
+git reset <id> --hard / --soft -> volver a una version anterior
+git log --stat -> se observa los cambios realizados con mas detalle
+git checkout <id_commit> <file> -> muestra el commit del id del archivo
+git checkout master <file> -> muestra la ultima version hecha
+git branch <name_rama> -> sirve para crear una rama      / git checkout -b <name> -> crea la rama y te mueve directamente a ella
+git commit -am "" -> sirve para no hacer el git add, si no hacerlo directamente
+git checkout <rama> -> sirve para moverse entre ramas
+git merge <rama> -> hace la unios de la rama con el contenido del main
+git merge --continue -> para hacer la continuacion de un error
+git branch -> muetra las ramas disponibles
+vin <name_txt> -> editar txt
+git branch -d <rama> -> eliminar rama de git
+git branch -a -> ver las ramas remotas
+git push origin -d <rama> -> eliminar rama de github desde git
+git rm -rf .git -> borra un git init mal hecho
+git revert id -> revirte los cambios hechos del commit al anterior
+git revert --no-commit HEAD(~1) -> deshace los cambios de los commit y los develve a stage
+
+
+crear llave publica y privada en la carpeta de User/SEBASTIAN
+	ssh-keygen -t rsa -b 4096 -C "email"
+revisar que las llaves estan encendidas
+	eval $(ssh-agent -s)
+ssh-add /C/Users/SEBATIAN/.ssh/id_rsa
+
+git remote add origin <url> -> decir a git para agregar origen remoto para los archivos
+git remote
+git remote -v -> ver existencia de repositorios remotos
+git push -u origin master -> enviar la rama master al origin
+git branch -m main -> hacer el cambio de master a main
+git pull origin master -> mandar el proyecto al repositorio y las fusiona
+git pull origin main --allow-unrelated-histories
+
+para enviar del local al remoto
+git pull -> traer la ultima version del servidor
+git pull origin main -> fusionamos el origen con la rama actual
+git commit -am "" -> guardamos cambios
+git push origin main -> enviamos al servidor
+tree -> arbol de logs
+
+git tag -a <name> -m "" <has> -> agregar un tag
+git push origin --tags -> enviar tags a Github
+git tag -> lista de tags 
+git tag -d <name> -> borra tag  / git push origin :refs/tags/<name_tag>
+
+gitk -> muestra las ramas de forma grafica
